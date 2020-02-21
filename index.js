@@ -1,6 +1,3 @@
-exports.handler = function(event) {
-  const promise = new Promise(function(resolve) {
-    resolve(200);
-  });
-  return promise;
+exports.handler = (event, context, callback) => {
+    callback(null, "key1 value is " + event.key1);
 };

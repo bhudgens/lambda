@@ -8,7 +8,8 @@ exports.handler = async (event, context) => {
     statusCode: 200,
     statusDescription: '200 OK',
   };
-  response.body = "{}"
+  response.body = "{}";
+  console.log('hi');
   return response;
 
 };
